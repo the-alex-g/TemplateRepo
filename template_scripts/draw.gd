@@ -1,20 +1,28 @@
 extends %BASE%
 
 # signals
+
 # constants
+
 # enums
+
 # exported variables
+
 # normal variables
 var color := Color.white
 var _ignore
+
 # onready variables
 onready var collision := $CollisionShape2D
+
 
 func _ready()%VOID_RETURN%:
 	pass
 
+
 func _process(delta:float)%VOID_RETURN%:
 	pass
+
 
 func _draw():
 	if collision != null:
