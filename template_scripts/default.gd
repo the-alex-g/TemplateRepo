@@ -4,7 +4,7 @@
 
 # enums
 
-# consts
+# constants
 
 # exported variables
 
