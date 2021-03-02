@@ -4,7 +4,7 @@ extends %BASE%
 
 # enums
 
-# consts
+# constants
 
 # exported variables
 
