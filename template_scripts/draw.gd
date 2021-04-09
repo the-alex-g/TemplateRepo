@@ -16,15 +16,15 @@ var _ignore
 onready var collision := $CollisionShape2D
 
 
-func _ready()%VOID_RETURN%:
+func _ready()->void%VOID_RETURN%:
 	pass
 
 
-func _process(delta:float)%VOID_RETURN%:
+func _process(delta:float)->void%VOID_RETURN%:
 	pass
 
 
-func _draw():
+func _draw()->void:
 	if collision != null:
 		var shape = collision.get_shape()
 		if shape is CircleShape2D:
@@ -34,13 +34,13 @@ func _draw():
 			var extents : Vector2 = shape.extents
 			draw_rect(Rect2(-extents, extents*2), color)
 		elif shape is CapsuleShape2D:
-        var radius = shape.radius
-        var height = shape.height
-        if collision.rotation_degrees != 270 and collision.rotation_degrees != 90:
-          draw_circle(Vector2(0,height/2), radius, color)
-          draw_circle(-Vector2(0,height/2), radius, color)
-          draw_rect(Rect2(-Vector2(radius*2, height)/2, Vector2(radius*2, height)), color)
-        else:
-          draw_circle(Vector2(height/2,0), radius, color)
-          draw_circle(-Vector2(height/2,0), radius, color)
-          draw_rect(Rect2(-Vector2(height, radius*2)/2, Vector2(height, radius*2)), color)
+		var radius = shape.radius
+		var height = shape.height
+		if collision.rotation_degrees != 270 and collision.rotation_degrees != 90:
+			draw_circle(Vector2(0,height/2), radius, color)
+			draw_circle(-Vector2(0,height/2), radius, color)
+			draw_rect(Rect2(-Vector2(radius*2, height)/2, Vector2(radius*2, height)), color)
+		else:
+			 draw_circle(Vector2(height/2,0), radius, color)
+			 draw_circle(-Vector2(height/2,0), radius, color)
+			 draw_rect(Rect2(-Vector2(height, radius*2)/2, Vector2(height, radius*2)), color)
