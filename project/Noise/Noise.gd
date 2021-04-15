@@ -14,6 +14,10 @@ func rn(position:int)->int:
  var mixed := position
  mixed *= PRIME_1
  mixed += seed
+ mixed ^= mixed
  mixed += PRIME_2
  mixed ^= mixed
+ mixed *= PRIME_3
+ mixed ^= mixed
+ # This is just Mr. Squirrel's function, but with different primes
  return mixed
