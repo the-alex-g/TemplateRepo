@@ -7,10 +7,6 @@ const PRIME_3 := 65537
 
 var _seed := 0.0
 
-func seed(value:int)->void:
-  _seed = value
-
-
 func _ready()->void:
   var time := OS.get_time()
   var hour:int = time["hour"]
@@ -19,7 +15,11 @@ func _ready()->void:
   minute *= 100
   hour *= 10000
   var time_as_int := second+minute+hour
-  _seed = time_as_int
+  seed(time_as_int)
+
+
+func seed(value:int)->void:
+  _seed = value
 
 
 func rn(position:int)->int:
