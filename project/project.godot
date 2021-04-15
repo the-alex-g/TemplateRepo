@@ -20,7 +20,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-RNG="*res://Noise/Noise.gd"
+RNG="*res://Noise/NoiseRNG.gd"
 
 [display]
 
