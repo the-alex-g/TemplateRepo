@@ -1,3 +1,4 @@
+class_name NoiseRNG
 extends Node
 
 const PRIME_1 := 39916801
