@@ -23,10 +23,6 @@ _global_script_class_icons={
 config/name="NewProject"
 config/icon="res://icon.png"
 
-[autoload]
-
-RNG="*res://Noise/NoiseRNG.gd"
-
 [display]
 
 window/stretch/mode="2d"
