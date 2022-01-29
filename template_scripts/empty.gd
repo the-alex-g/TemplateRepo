@@ -1,4 +1,6 @@
 extends %BASE%
+# class description (one line)
+# extended class description
 
 # signals
 
